@@ -1,64 +1,62 @@
- Data Inspection
-891 rows, 12 columns.
+Titanic Data Set Overview:
 
-Missing values: Age (177), Cabin (687), Embarked (2).
+Data Overview:
+891 rows, 12 columns
 
-Missing Values
-Age filled with median (28).
-
-Embarked filled with mode ('S').
+Missing values: Age (177), Cabin (687), Embarked (2)
 
 Data Cleaning
-No duplicates.
+Age → filled with median (28)
 
-Converted Pclass, Sex, Embarked to category; Name, Ticket to string.
+Embarked → filled with mode ('S')
 
-Exploratory Data (Summary Statistics)
-Mean age: 29.7 years.
+No duplicates
 
-Survival rate: 38.4% (342 survived, 549 did not).
+Converted types: Pclass, Sex, Embarked to category; Name, Ticket to string
 
-Histogram – Age Distribution
-Most passengers 20–40 years old.
+Summary Statistics
+Mean age: 29.7 years
 
-Few children under 5 or seniors over 70.
+Survival rate: 38.4% (342 survived, 549 died)
 
-Histogram – Fare Distribution
-Most fares under $50.
+Age Distribution
+Most passengers: 20–40 years
 
-Long tail of high fares (max $512).
+Few children under 5 or seniors over 70
 
-Right‑skewed.
+Fare Distribution
+Most fares under $50
 
-Boxplot – Age & Fare Outliers
-Age: few outliers above 65.
+Right‑skewed, max fare $512
 
-Fare: many high‑fare outliers (>$100).
+Outliers
+Age: few above 65
 
-Line Chart – Survival Rate by Passenger Class
+Fare: many above $100
+
+Survival by Passenger Class
 1st class: ~63%
 
 2nd class: ~47%
 
 3rd class: ~24%
 
-Bar Chart – Survival Count by Passenger Class
-3rd class had the most passengers but the fewest survivors.
+Higher class → better survival
 
-Heatmap – Correlation Analysis
-Pclass vs Fare: -0.55 (strong negative).
+Survival Count by Class
+3rd class had most passengers but fewest survivors
 
-Fare vs Survived: ~0.26 (weak positive).
+Correlation Highlights
+Pclass vs Fare: -0.55 (strong negative)
 
-Age vs Survived: ~0.08 (no correlation).
+Fare vs Survived: ~0.26 (weak positive)
 
-Summary
-Majority young adults with low fares – economy‑class base.
+Age vs Survived: ~0.08 (no correlation)
 
-Survival drops sharply with class – privilege matters.
+Conclusion
+Majority were young adults with low fares (economy class)
 
-Higher fare weakly linked to survival; age has almost no correlation.
+Class and wealth are the strongest predictors of survival
 
-Wealth (fare) determines class, which drives survival.
+Age and family size have almost no correlation with survival
 
-Class and wealth are stronger predictors than age or family size.
